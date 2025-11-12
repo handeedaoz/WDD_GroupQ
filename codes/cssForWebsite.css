@@ -306,12 +306,11 @@ span{
 	
 	.imgItem{
 		margin-bottom: 20px;
-		text-align: left;
 		align-items: flex-start;
 		display: inline-flex;
 		flex-direction: column;
 		width:100%;
-		
+		position: relative;
 	}
 
 	.imgInAbout {
@@ -319,8 +318,24 @@ span{
 		height: 100px;
 		color:white;
 		text-align: left;
-		display:block;
-		
+		display:block;		
+	}
+	
+	.hovering {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: 0 10px 15px rgba(0, 0, 0, 1);;
+}
+	
+	.imgItem:hover .hovering{
+		opacity:1;
 	}
 
 	.aboutImgP {
@@ -377,6 +392,7 @@ span{
 		display: inline-flex;
 		flex-direction: column;
 		width:100%;
+		position: relative;
 	}
 
 	.imgInAbout2 {
@@ -385,6 +401,23 @@ span{
 		color:white;
 		text-align: left;
 		display:block;
+	}
+	
+	.hovering2 {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: 0 10px 15px rgba(0, 0, 0, 1);;
+}
+	
+	.imgItem2:hover .hovering2{
+		opacity:1;
 	}
 
 	.aboutImgP2 {
@@ -400,6 +433,11 @@ span{
 		display: inline-flex;
 		flex-direction: column;
 		width:100%;
+		position: relative;
+	}
+	
+	.imgItem3:hover .hovering2{
+		opacity:1;
 	}
 
 	.imgInAbout3 {
