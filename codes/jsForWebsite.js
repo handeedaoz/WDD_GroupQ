@@ -11,7 +11,7 @@ function hideSidebar(){
 }
 //------------------
 
-//HOME AND ABOUT PAGE JS
+//HOME AND ABOUT PAGE JS_ HANDE EDA OZDEMIR
 const currentPage = window.location.pathname.split('/').pop();/*detects which page does user currently use*/
 
 if (currentPage=="home.html"){
@@ -37,5 +37,9 @@ if (currentPage=="home.html"){
 	}
 		
 }
+
+
+
+
 
 
