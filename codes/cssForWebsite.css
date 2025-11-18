@@ -79,7 +79,6 @@ nav input[type=text]{/*"input[type=text]" is the searching bar*/
 }
 
 .navLogo {
-    margin-right: auto;
     display: flex;
     align-items: center;
 }
@@ -88,7 +87,6 @@ nav input[type=text]{/*"input[type=text]" is the searching bar*/
     height: 40px;
     width: auto;
     border-radius: 5px;
-    margin: 5px 0;
 }
 /*-----------------------------*/
 
@@ -380,6 +378,18 @@ span{
 	}
 	.menu-button{
 		display:block;
+	}
+	
+	.searchBar{
+		flex: 0 0 220px;
+		padding: 4px 4px;
+		height:25px;
+		
+	}
+	.navLogo{
+		height:40px;
+		width:auto;
+		
 	}
 /*-----------------------------*/	
 	/*ADJUSTING HEADING_*/
