@@ -93,7 +93,7 @@ nav input[type=text]{/*"input[type=text]" is the searching bar*/
 /*-----------------------------*/
 
 /*BACKGROUND_*/
-body{
+body.edaPages{
 	background-image:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("background1.jpg");/*rgba's makes background to look darker*/
 	background-repeat: no-repeat;/*so that the background doesnt repeat itself as an img*/
 	background-size: cover;/*covers the whole page*/
@@ -107,6 +107,12 @@ body{
 	margin: 80px 30px 30px 30px;/*top right bottom left*/
 	font-size: 70px;
 	text-align: center;/*text gets displayed in center*/
+	
+	/*FONT*/
+	font-family: "Stack Sans Notch", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 70px;
+	font-style: normal;
 }
 
 span{
@@ -129,6 +135,12 @@ span{
 	border:1px solid black;
 	padding: 14px 25px;
 	width: fit-content;/*fits the content in a box. ex, border would be just around the element, not whole row*/
+	
+	/*FONT*/
+	font-family: "Barlow", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+
 }
 
 #exploreButton:hover{/*when you hover on the link with the mouse, it uses the css below.*/
@@ -161,6 +173,24 @@ span{
 .aboutImgP { 
 	margin:0;
 	color:white;
+	
+	/*FONTS*/
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0,
+		"wdth" 100,
+		"GRAD" 0,
+		"XOPQ" 96,
+		"XTRA" 468,
+		"YOPQ" 79,
+		"YTAS" 750,
+		"YTDE" -203,
+		"YTFI" 738,
+		"YTLC" 514,
+		"YTUC" 712;
 }
 
 /*-----------------------------*/
@@ -183,11 +213,36 @@ span{
 
 .aboutPageH1{
 	color:#247D7F;
+	
+	/*FONTS*/
+	font-family: "Stack Sans Notch", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
 }
 
 .aboutPageP{
 	color:white;
 	text-align:left;/*texts goes to left*/
+	
+	/*FONTS*/
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0,
+		"wdth" 100,
+		"GRAD" 0,
+		"XOPQ" 96,
+		"XTRA" 468,
+		"YOPQ" 79,
+		"YTAS" 750,
+		"YTDE" -203,
+		"YTFI" 738,
+		"YTLC" 514,
+		"YTUC" 712;
+	
 }
 /*-----------------------------*/
 
@@ -225,11 +280,31 @@ span{
 	object-fit: cover;/*image will fill the entire container while in its usual ratio*/
 	border-radius: 10px;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);/*puts a shadow like a box on the background*/
+	
 }
 
 .aboutImgP2 {
 	margin: 15px 0 0 0;
 	color: white;
+	
+	/*FONTS*/
+	
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0,
+		"wdth" 100,
+		"GRAD" 0,
+		"XOPQ" 96,
+		"XTRA" 468,
+		"YOPQ" 79,
+		"YTAS" 750,
+		"YTDE" -203,
+		"YTFI" 738,
+		"YTLC" 514,
+		"YTUC" 712;
 }
 
 .imgItem3 {
@@ -260,11 +335,37 @@ span{
 
 .aboutPageH2{
 	color:#247D7F;
+	
+	/*FONTS*/
+	
+	font-family: "Stack Sans Notch", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
 }
 
 .aboutPageP2{
 	color:white;
 	text-align:left;
+	
+	/*FONTS*/
+	
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0,
+		"wdth" 100,
+		"GRAD" 0,
+		"XOPQ" 96,
+		"XTRA" 468,
+		"YOPQ" 79,
+		"YTAS" 750,
+		"YTDE" -203,
+		"YTFI" 738,
+		"YTLC" 514,
+		"YTUC" 712;
 }
 
 /*-----------------------------*/
@@ -342,7 +443,27 @@ span{
 		color:white;
 		text-align: left;
 		width: 170px;
+		
+		/*FONTS*/
+	
+		font-family: "Roboto Flex", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: <weight>;
+		font-style: normal;
+		font-variation-settings:
+			"slnt" 0,
+			"wdth" 100,
+			"GRAD" 0,
+			"XOPQ" 96,
+			"XTRA" 468,
+			"YOPQ" 79,
+			"YTAS" 750,
+			"YTDE" -203,
+			"YTFI" 738,
+			"YTLC" 514,
+			"YTUC" 712;
 	}
+
 	
 	.content {
 		text-align: center;
@@ -356,12 +477,38 @@ span{
 	.aboutPageH1{
 		color:#247D7F;
 		font-size:20px;
+		
+		/*FONTS*/
+	
+		font-family: "Stack Sans Notch", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: <weight>;
+		font-style: normal;
 	}
 
 	.aboutPageP{
 		font-size:10px;		
 		color:white;
 		text-align:left;/*texts goes to left*/
+		
+		/*FONTS*/
+	
+		font-family: "Roboto Flex", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: <weight>;
+		font-style: normal;
+		font-variation-settings:
+			"slnt" 0,
+			"wdth" 100,
+			"GRAD" 0,
+			"XOPQ" 96,
+			"XTRA" 468,
+			"YOPQ" 79,
+			"YTAS" 750,
+			"YTDE" -203,
+			"YTFI" 738,
+			"YTLC" 514,
+			"YTUC" 712;
 	}
 /*-----------------------------*/
 	/*group of images 2*/
@@ -424,6 +571,25 @@ span{
 		color:white;
 		text-align: right;
 		width: 170px;
+		
+		/*FONTS*/
+	
+		font-family: "Roboto Flex", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: <weight>;
+		font-style: normal;
+		font-variation-settings:
+			"slnt" 0,
+			"wdth" 100,
+			"GRAD" 0,
+			"XOPQ" 96,
+			"XTRA" 468,
+			"YOPQ" 79,
+			"YTAS" 750,
+			"YTDE" -203,
+			"YTFI" 738,
+			"YTLC" 514,
+			"YTUC" 712;
 	}
 
 	.imgItem3 {
@@ -467,24 +633,46 @@ span{
 		font-size: 20px;
 		text-align: left;
 		width: 100%;
+		
+		/*FONTS*/
+	
+		font-family: "Stack Sans Notch", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: <weight>;
+		font-style: normal;
 	}
 
 	.aboutPageP2 li {
-		text-align: left;
 		margin: 0;
 		padding: 0;
 		width: 100%;
 		font-size: 10px;
+		text-align: left;
+		display: list-item;
+		list-style-position: outside;
 	}
 
 	.aboutPageP2{
 		list-style-position: outside;
-	}
-
-	.aboutPageP2 li {
-		text-align: left;
-		display: list-item;
-		list-style-position: outside;
+		
+		/*FONTS*/
+	
+		font-family: "Roboto Flex", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: <weight>;
+		font-style: normal;
+		font-variation-settings:
+			"slnt" 0,
+			"wdth" 100,
+			"GRAD" 0,
+			"XOPQ" 96,
+			"XTRA" 468,
+			"YOPQ" 79,
+			"YTAS" 750,
+			"YTDE" -203,
+			"YTFI" 738,
+			"YTLC" 514,
+			"YTUC" 712;
 	}
 
 }
