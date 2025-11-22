@@ -148,24 +148,13 @@ span{
 /*ABOUT PAGE:*/
 
 /*group of images 1_*/
-.imgAndContentRow {
-    margin: 50px auto 50px auto;/*so it will leave space between with the second "imgAndContentRow"*/
-	
-}
 
-.imgRow{
-	display: flex;
-}
-
-.imgItem{
-	margin-right:20px;
-	width: 300px;/*setting width same as imgInAbout, the text will align vertically with the img.*/
-}
-
-.imgInAbout {
-    width: 300px;
-    height: 200px;
-    margin-bottom: 15px;
+.content-card {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 25px;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	color: white;
 }
 
 .aboutImgP { 
@@ -194,163 +183,25 @@ span{
 /*-----------------------------*/
 
 /*group of content 1_*/
-.imgAndContentRow{
-	align-items:flex-start;/*aligns items to the top*/
-	display: flex;/*every element will stacked in a horizontal row*/
-    justify-content: space-between;/*it puts space between image and content row*/
-}
 
-.content {
-	text-align: center;
-	margin-left: 5%;
-	background: rgba(255, 255, 255, 0.1);
-	padding: 25px;
-	border-radius: 10px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);/*puts a shadow like a box on the background*/
-}
 
-.aboutPageH1{
-	color:#247D7F;
-	
-	/*FONTS*/
-	font-family: "Stack Sans Notch", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: <weight>;
-	font-style: normal;
-}
-
-.aboutPageP{
-	color:white;
-	text-align:left;/*texts goes to left*/
-	
-	/*FONTS*/
-	font-family: "Roboto Flex", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: <weight>;
-	font-style: normal;
-	font-variation-settings:
-		"slnt" 0,
-		"wdth" 100,
-		"GRAD" 0,
-		"XOPQ" 96,
-		"XTRA" 468,
-		"YOPQ" 79,
-		"YTAS" 750,
-		"YTDE" -203,
-		"YTFI" 738,
-		"YTLC" 514,
-		"YTUC" 712;
-	
-}
-/*-----------------------------*/
-
-/*group of images 1_*/
-.imgAndContentRow2 {
-    min-width: 300px;
-    display: flex;
-	justify-content: flex-end;/*items will align to the bottom of the container*/
-}
-
-.imgsRow2{
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	
-}
-
-.top-images {
-	display: flex;
-	margin-bottom: 20px;
-	justify-content: flex-end;/*items will align to the bottom of the container*/
-	width: 100%;
-	justify-content:space-between
-}
-    
-.imgItem2 {
-	text-align: center;
-	;
-}
-
-.imgInAbout2 {
-	width: 100%;
-    height: 100px;
-	object-fit: cover;/*image will fill the entire container while in its usual ratio*/
-	border-radius: 10px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);/*puts a shadow like a box on the background*/
-	
-}
-
-.aboutImgP2 {
-	margin: 15px 0 0 0;
-	color: white;
-	
-	/*FONTS*/
-	
-	font-family: "Roboto Flex", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: <weight>;
-	font-style: normal;
-	font-variation-settings:
-		"slnt" 0,
-		"wdth" 100,
-		"GRAD" 0,
-		"XOPQ" 96,
-		"XTRA" 468,
-		"YOPQ" 79,
-		"YTAS" 750,
-		"YTDE" -203,
-		"YTFI" 738,
-		"YTLC" 514,
-		"YTUC" 712;
-}
-
-.imgItem3 {
-	text-align: center;
-	width: 100%;
-}
-
-.imgInAbout3 {
-	width: 100%;
-    height: 200px;
-	object-fit: cover;/*image will fill the entire container while in its usual ratio*/
-	border-radius: 10px;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-	display: block;
-}
-/*-----------------------------*/
-
-/*group of content 2_*/
-.content2 {
-	margin-right: 10%;
-	width: 45%;
-	float: left;
-	background: rgba(255, 255, 255, 0.1);
-	padding: 25px;
-	border-radius: 10px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
+/* Headings */
+.aboutPageH1,
 .aboutPageH2{
 	color:#247D7F;
-	
-	/*FONTS*/
-	
 	font-family: "Stack Sans Notch", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: <weight>;
 	font-style: normal;
 }
 
+/* Paragraphs/Lists */
+.aboutPageP,
 .aboutPageP2{
 	color:white;
 	text-align:left;
 	
-	/*FONTS*/
-	
 	font-family: "Roboto Flex", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: <weight>;
 	font-style: normal;
 	font-variation-settings:
 		"slnt" 0,
@@ -366,13 +217,76 @@ span{
 		"YTUC" 712;
 }
 
+/* Image captions */
+.aboutImgP,
+.aboutImgP2 { 
+	margin:0;
+	color:white;
+	
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0,
+		"wdth" 100,
+		"GRAD" 0,
+		"XOPQ" 96,
+		"XTRA" 468,
+		"YOPQ" 79,
+		"YTAS" 750,
+		"YTDE" -203,
+		"YTFI" 738,
+		"YTLC" 514,
+		"YTUC" 712;
+}
+
+/* Hover effects - OPTIONAL */
+.hovering,
+.hovering2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+}
+
+.hovering p,
+.hovering2 p {
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+
+/* Parent container needs position relative */
+.img-container {
+	position: relative;
+}
+
+.img-container:hover .hovering,.img-container:hover .hovering2 {
+	opacity: 1;
+}
+
+/* Author name */
+#authorName {
+	color: #247D7F;
+	text-align: center;
+	margin-top: 50px;
+	font-family: "Stack Sans Notch", sans-serif;
+}
 /*-----------------------------*/
 
 /*MEDIA TAGS FOR WEBSITES*/
 /*for phones*/
 @media only screen and (max-width:600px){
-	/*NAVBAR_*/
-	
 	.hideOnMobile{
 		display:none;
 	}
@@ -380,310 +294,50 @@ span{
 		display:block;
 	}
 	
-	.searchBar{
-		flex: 0 0 220px;
-		padding: 4px 4px;
-		height:25px;
-		
+	.navbar{
+		position:relative;
+		z-index:100;/*with this navbar will be in front of everything*/
 	}
-	.navLogo{
-		height:40px;
-		width:auto;
-		
+	
+	.sidebar {
+		z-index: 1050;/*it already has 1000 index but ensuring it is the highest*/
 	}
-/*-----------------------------*/	
-	/*ADJUSTING HEADING_*/
+	
+	nav input[type=text]{
+		width: 180px;
+		padding: 4px;
+	}
+	
+	/* Heading mobile */
+	.homePageH {
+		font-size: 50px;
+		margin: 50px 20px 20px 20px;
+	}
+	
 	span{
-		color:#247D7F;
-		margin: 30px; /*30px 30px 30px 30px*/
-		font-size:30px;/*adjusts the font size*/
-		display: block;/*just gets the element not the whole row*/
-	}
-/*-----------------------------*/
-	/*ADJUSTING IMGS+CONTENT*/
-	
-	/*group of images1 + content1*/
-	.imgAndContentRow{
-		align-items: flex-start;/*aligns items to the top*/
-		display:flex;
-		justify-content:space-between;
+		font-size:30px;
 	}
 	
-	.imgRow {
-		display:flex;
-		flex-direction:column;
-		width: 170px;
-	}
-	
-	.imgItem{
-		margin-bottom: 20px;
-		align-items: flex-start;
-		display: inline-flex;
-		flex-direction: column;
-		width:100%;
-		position: relative;
-	}
-
-	.imgInAbout {
-		width: 170px;
-		height: 100px;
-		color:white;
-		text-align: left;
-		display:block;		
-	}
-	
-	.hovering {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 100%;
-		width: 100%;
-		opacity: 0;
-		transition: .5s ease;
-		background-color: 0 10px 15px rgba(0, 0, 0, 1);;
-}
-	
-	.imgItem:hover .hovering{
-		opacity:1;
-	}
-
-	.aboutImgP {
-		color:white;
-		text-align: left;
-		width: 170px;
-		
-		/*FONTS*/
-	
-		font-family: "Roboto Flex", sans-serif;
-		font-optical-sizing: auto;
-		font-weight: <weight>;
-		font-style: normal;
-		font-variation-settings:
-			"slnt" 0,
-			"wdth" 100,
-			"GRAD" 0,
-			"XOPQ" 96,
-			"XTRA" 468,
-			"YOPQ" 79,
-			"YTAS" 750,
-			"YTDE" -203,
-			"YTFI" 738,
-			"YTLC" 514,
-			"YTUC" 712;
-	}
-
-	
-	.content {
-		text-align: center;
-		max-width: 90%; 
-		background: rgba(255, 255, 255, 0.1);
-		padding: 25px;
-		border-radius: 10px;
-		box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);/*puts a shadow like a box on the background*/
-	}
-
-	.aboutPageH1{
-		color:#247D7F;
-		font-size:20px;
-		
-		/*FONTS*/
-	
-		font-family: "Stack Sans Notch", sans-serif;
-		font-optical-sizing: auto;
-		font-weight: <weight>;
-		font-style: normal;
-	}
-
-	.aboutPageP{
-		font-size:10px;		
-		color:white;
-		text-align:left;/*texts goes to left*/
-		
-		/*FONTS*/
-	
-		font-family: "Roboto Flex", sans-serif;
-		font-optical-sizing: auto;
-		font-weight: <weight>;
-		font-style: normal;
-		font-variation-settings:
-			"slnt" 0,
-			"wdth" 100,
-			"GRAD" 0,
-			"XOPQ" 96,
-			"XTRA" 468,
-			"YOPQ" 79,
-			"YTAS" 750,
-			"YTDE" -203,
-			"YTFI" 738,
-			"YTLC" 514,
-			"YTUC" 712;
-	}
-/*-----------------------------*/
-	/*group of images 2*/
-	
-	.imgAndContentRow2{
-		align-items: flex-start;/*aligns items to the top*/
-		display:flex;
-		justify-content:space-between;
-	}
-	
-	.top-images {
-		width: 100%;
-		display:block;
-		justify-content:space-between
-	}
-	
-	.imgsRow2{
-		display:flex;
-		flex-direction:column;
-		width: 100%;
-		margin:0 10px 15px;
-	}
-			
-	.imgItem2 {
-		margin-bottom: 20px;
-		text-align: left;
-		align-items: flex-start;
-		display: inline-flex;
-		flex-direction: column;
-		width:100%;
-		position: relative;
-	}
-
-	.imgInAbout2 {
-		width: 170px;
-		height: 100px;
-		color:white;
-		text-align: left;
-		display:block;
-	}
-	
-	.hovering2 {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 100%;
-		width: 100%;
-		opacity: 0;
-		transition: .5s ease;
-		background-color: 0 10px 15px rgba(0, 0, 0, 1);;
-}
-	
-	.imgItem2:hover .hovering2{
-		opacity:1;
-	}
-
-	.aboutImgP2 {
-		color:white;
-		text-align: right;
-		width: 170px;
-		
-		/*FONTS*/
-	
-		font-family: "Roboto Flex", sans-serif;
-		font-optical-sizing: auto;
-		font-weight: <weight>;
-		font-style: normal;
-		font-variation-settings:
-			"slnt" 0,
-			"wdth" 100,
-			"GRAD" 0,
-			"XOPQ" 96,
-			"XTRA" 468,
-			"YOPQ" 79,
-			"YTAS" 750,
-			"YTDE" -203,
-			"YTFI" 738,
-			"YTLC" 514,
-			"YTUC" 712;
-	}
-
-	.imgItem3 {
-		margin-bottom: 20px;
-		text-align: right;
-		align-items: flex-start;
-		display: inline-flex;
-		flex-direction: column;
-		width:100%;
-		position: relative;
-	}
-	
-	.imgItem3:hover .hovering2{
-		opacity:1;
-	}
-
-	.imgInAbout3 {
-		object-fit: cover;/*image will fill the entire container while in its usual ratio*/	
-		width: 170px;
-		height: 200px;
-		color:white;
-		text-align: left;
-		display:block;
-	}
-	/*-----------------------------*/
-
-	/*group of content 2*/
-	.content2 {
-		overflow: hidden;
-		display: block;
-		text-align: left;
-		width: 40%;
-		background: rgba(255, 255, 255, 0.1);
-		padding: 25px;
-		border-radius: 10px;
-		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-	}
-
+	/* About page font sizes */
+	.aboutPageH1,
 	.aboutPageH2 {
-		color: #247D7F;
 		font-size: 20px;
-		text-align: left;
-		width: 100%;
-		
-		/*FONTS*/
+	}
+
+	.aboutPageP,
+	.aboutPageP2 {
+		font-size: 12px;
+	}
 	
-		font-family: "Stack Sans Notch", sans-serif;
-		font-optical-sizing: auto;
-		font-weight: <weight>;
-		font-style: normal;
+	/* Explore button mobile */
+	#exploreButton {
+		padding: 12px 20px;
+		font-size: 14px;
 	}
-
-	.aboutPageP2 li {
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		font-size: 10px;
-		text-align: left;
-		display: list-item;
-		list-style-position: outside;
-	}
-
-	.aboutPageP2{
-		list-style-position: outside;
-		
-		/*FONTS*/
 	
-		font-family: "Roboto Flex", sans-serif;
-		font-optical-sizing: auto;
-		font-weight: <weight>;
-		font-style: normal;
-		font-variation-settings:
-			"slnt" 0,
-			"wdth" 100,
-			"GRAD" 0,
-			"XOPQ" 96,
-			"XTRA" 468,
-			"YOPQ" 79,
-			"YTAS" 750,
-			"YTDE" -203,
-			"YTFI" 738,
-			"YTLC" 514,
-			"YTUC" 712;
+	/* Hover effects on mobile */
+	.hovering,
+	.hovering2 {
+		background-color: rgba(0, 0, 0, 0.8);
 	}
-
 }
-	/*-----------------------------*/
