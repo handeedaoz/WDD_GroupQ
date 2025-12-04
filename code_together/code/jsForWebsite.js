@@ -4,7 +4,7 @@
 //HOME AND ABOUT PAGE JS_ HANDE EDA OZDEMIR
 const currentPage = window.location.pathname.split('/').pop();/*detects which page does user currently use*/
 
-if (currentPage=="home.html"){
+if (currentPage=="index.html"){
 	let confirmMessage=confirm("Want to know more about Life Under Water?","You won't be regretting!")
 	if(confirmMessage==true){
 		i=0
